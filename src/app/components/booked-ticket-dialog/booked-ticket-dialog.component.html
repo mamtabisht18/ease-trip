@@ -1,0 +1,21 @@
+<div class="et-dialog">
+  <h1>Ticket Confirmed!</h1>
+  <ol>
+    <li>
+      <span class="label">ID</span>
+      <span class="value">{{ data.id }}</span>
+    </li>
+    <li>
+      <span class="label">Mobile</span>
+      <span class="value">{{ data.mobile }}</span>
+    </li>
+    <li>
+      <span class="label">Date</span>
+      <span class="value">{{ data.date | date: 'MMMM d, y' }}</span>
+    </li>
+    <li>
+      <span class="label">Seats</span>
+      <span class="value">{{ data.seats }}</span>
+    </li>
+  </ol>
+</div>

@@ -1,0 +1,10 @@
+.et-dialog {
+  width: 300px;
+  li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .label {
+    font-weight: 500;
+  }
+}

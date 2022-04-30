@@ -1,0 +1,27 @@
+.et-book-tickets {
+  box-shadow: 0 5px 10px #747474;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  h3 {
+    width: 100%;
+  }
+  .et-book-form, .et-select-seat-container {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 50%;
+  }
+  .et-book-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .et-submit-wrapper {
+    width: 100%;
+    display: flex;
+    button {
+      width: 100%;
+      text-transform: uppercase;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="et-book-tickets">
+  <h3>Please enter the details and select the available seats</h3>
+  <form class="et-book-form" [formGroup]="form">
+      <mat-form-field appearance="outline">
+        <mat-label>Date</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error>This field is mandatory</mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput formControlName="mobile" placeholder="Enter your mobile number">
+        <mat-error>This field is mandatory with 10 digits valid number</mat-error>
+      </mat-form-field>
+  </form>
+  <div class="et-select-seat-container">
+    <app-select-seats (seatChange)="onSeatChange($event)"></app-select-seats>
+  </div>
+  <div class="et-submit-wrapper">
+    <button (click)="onConfirm()" mat-raised-button color="primary">Book ticket</button>
+  </div>
+</div>
